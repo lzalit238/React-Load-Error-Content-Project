@@ -1,0 +1,82 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  //   background-color: rgb(52, 52, 109);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1108%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(50%2c 114%2c 181%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c495.144C98.145%2c497.49%2c199.671%2c492.233%2c283.436%2c441.034C368.097%2c389.287%2c422.128%2c301.859%2c463.656%2c211.745C505.294%2c121.394%2c514.835%2c24.339%2c521.217%2c-74.94C529.148%2c-198.307%2c577.425%2c-337.462%2c505.421%2c-437.95C433.517%2c-538.299%2c287.022%2c-539.775%2c167.112%2c-569.13C52.543%2c-597.177%2c-69.824%2c-652.889%2c-177.698%2c-605.183C-284.209%2c-558.08%2c-307.67%2c-420.409%2c-378.398%2c-327.884C-443.541%2c-242.666%2c-563.277%2c-189.342%2c-576.908%2c-82.947C-590.532%2c23.391%2c-501.111%2c111.651%2c-446.531%2c203.924C-397.68%2c286.512%2c-355.232%2c375.274%2c-274.86%2c427.691C-194.208%2c480.291%2c-96.262%2c492.843%2c0%2c495.144' fill='%232d67a3'%3e%3c/path%3e%3cpath d='M1440 923.054C1508.017 919.841 1567.944 884.981 1626.271 849.844 1686.186 813.751 1759.512 782.508 1782.798 716.5509999999999 1805.902 651.111 1758.3 584.204 1744.033 516.287 1730.87 453.63 1747.24 378.305 1702.186 332.815 1657.218 287.413 1579.791 310.469 1519.424 289.508 1454.589 266.996 1403.945 196.30200000000002 1335.953 205.64999999999998 1267.828 215.01600000000002 1228.409 285.729 1181.46 335.974 1132.646 388.214 1065.867 433.979 1056.382 504.844 1046.91 575.614 1100.186 636.77 1132.692 700.343 1163.696 760.979 1186.922 828.027 1242.066 867.991 1298.665 909.009 1370.179 926.352 1440 923.054' fill='%23377dc7'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1108'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  padding: 5px;
+  color: #fefefe;
+  display: flex;
+  justify-content: space-evenly;
+  h1 {
+    text-align: center;
+  }
+}
+
+.container {
+  //   background-color: rgb(66, 66, 138);
+  background-color: #3272b5;
+  padding: 2rem;
+  box-shadow: 2px 5px 5px #285a8f;
+}
+
+.rotate {
+  position: relative;
+  animation: rotating 3s infinite;
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360);
+  }
+}
+
+@-moz-keyframes showEffect {
+  0% {
+    display: none;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    visibility: block;
+  }
+}
+@-webkit-keyframes showEffect {
+  0% {
+    display: none;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    visibility: block;
+  }
+}
+@keyframes showEffect {
+  0% {
+    display: none;
+    visibility: hidden;
+  }
+  100% {
+    display: block;
+    visibility: block;
+  }
+}
+
+.css_only {
+  -moz-animation-name: showEffect;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 2.3s;
+
+  -webkit-animation-name: showEffect;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 2.3s;
+
+  animation-name: showEffect;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2.3s;
+}
